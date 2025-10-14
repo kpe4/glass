@@ -8,9 +8,9 @@ body{
 }
 
 a, p, h1, h2, input, h3, button{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .glass{
@@ -51,4 +51,29 @@ header > .right{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.glass > header > .right > nav > a{
+    color: #f7f7f77c;
+    transition: all 0.3s ease;
+    margin-left: 7vh;
+}
+.glass > header > .right > nav > a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.281);
+    padding: 5 13px;
+    border-radius: 100px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.281);
+}
+
+.notifi > i{
+    color: rgba(255, 255, 255, 0.719);
+    transition: all 0.3s ease;
+}
+.notifi > i:hover{
+    color: rgba(255, 0, 0, 0.705);
+    background-color: rgba(0, 0, 0, 0.281);
+    padding: 10 10px;
+    border-radius: 100px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.281);
 }
