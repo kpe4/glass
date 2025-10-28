@@ -140,6 +140,10 @@ main{
 
 .side-bar{
     width: 20%;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .trailers{
@@ -150,11 +154,15 @@ main{
     border: 1.7px solid rgba(211, 211, 211);
     font-size: 20px;
     font-weight: 600;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .trailers > h2{
     margin: 0;
-    margin-bottom: 12px;
     font-size: 18px;
     font-weight: 600;
 }
@@ -165,7 +173,7 @@ main{
     border-radius: 10px;
     display: flex;
     align-items: end;
-    margin-bottom: 20px;
+    height: 42%;
 }
 
 .trailer-card2{
@@ -175,8 +183,8 @@ main{
     border-radius: 10px;
     display: flex;
     align-items: end;
-    margin-bottom: 20px;
     background-position: bottom;
+    height: 42%;
 }
 
 .gradient-line{
@@ -200,8 +208,53 @@ main{
     border-radius: 100px;
 }
 
+<<<<<<< HEAD
 h2{
     color: white;
+=======
+.continue{
+    background-color: #33333393;
+    border-radius: 20px;
+    padding: 20px;
+    color: #f7f7f7c5;
+    border: 1.7px solid rgba(211, 211, 211);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 7%;
+}
+
+.continue > h2{
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.conti-line1, .cpnti-line2, .conti-line3{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.conti-line1 > img, .conti-line2 > img, .conti-line3 > img{
+    height: 100%;
+    width: 20%;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+    border: 1.5px solid rgba(255, 255, 255, 0.185);
+}
+
+.conti-play-btn{
+    background-color: rgba(255, 255, 255, 0.26);
+    backdrop-filter: blur(6px);
+    padding: 10px 8px;
+    border-radius: 100px;
+    margin-left: 20px;
+>>>>>>> 451ba70dfba1c573c3e16f315155154c15853f42
 }
 
 .main-content{
@@ -209,6 +262,7 @@ h2{
 }
 
 .banner{
+<<<<<<< HEAD
     background-image: url("../images/spiderman.png"); /* или твой фон */
     background-size: cover;
     background-position: center;
@@ -425,3 +479,103 @@ h2{
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
+=======
+    width: 100%;
+    height: 405px;
+    border-radius: 20px;
+    padding: 20px 4%;
+    border: 1.5px solid rgba(255, 255, 255, 0.308);
+    background-image: url("../images/aot.png");
+    width: 92%;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+}
+
+.banner, .inside{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.right-ins{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-ins{
+    width: 50%;
+}
+
+.left-ins > .tags{
+    display: flex;
+    gap: 10px;
+}
+.left-ins > .tags > p{
+    color: rgb(255, 255, 255);
+    background-color: rgba(250, 235, 215, 0.233);
+    backdrop-filter: blur(8px);
+    padding: 5px 14px;
+    border-radius: 100px;
+    border: 1.5px solid rgba(255, 255, 255, 0.308);
+    margin: 0;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.left-ins > .desc{
+    color: rgb(206, 206, 206);
+    font-weight: 200;
+    margin-top: 14px;
+}
+
+.left-ins > .btns{
+    display: flex;
+    gap: 20px;
+}
+
+.left-ins > .btns > a{
+    background-color: rgba(255, 255, 255, 0.466);
+    backdrop-filter: blur(5px);
+    padding: 10px 8px;
+    border-radius: 100px;
+    color: white;
+    border: 1.5px solid rgb(211, 211, 211);
+    transition: all 0.2s ease;
+}
+
+.left-ins > .btns > a:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.527);
+    background-color: transparent;
+}
+
+.right-ins > a{
+    background-color: rgba(255, 255, 255, 0.466);
+    backdrop-filter: blur(5px);
+    padding: 6px 4px;
+    border-radius: 100px;
+    color: white;
+    border: 1.5px solid rgb(211, 211, 211);
+    transition: all 0.2s ease;
+}
+
+.right-ins > a:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.527);
+    background-color: transparent;
+}
+
+.trands{
+    margin-top: 7%;
+    width: 100%;
+    height: 380px;
+}
+>>>>>>> 451ba70dfba1c573c3e16f315155154c15853f42
