@@ -200,39 +200,228 @@ main{
     border-radius: 100px;
 }
 
-.continue{
-    background-color: #33333393;
-    border-radius: 20px;
-    padding: 20px;
-    color: #f7f7f7c5;
-    border: 1.7px solid rgba(211, 211, 211);
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 7%;
-}
-
-.continue > h2{
-    margin: 0;
-    margin-bottom: 12px;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.conti-line1{
-    display: flex;
-    height: 10%;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url("../images/aot.png");
-}
-
-.conti-line1 > img{
-    height: 100%;
-    width: 20%;
-    border-radius: 20px;
+h2{
+    color: white;
 }
 
 .main-content{
     width: 77%;
+}
+
+.banner{
+    background-image: url("../images/spiderman.png"); /* или твой фон */
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    padding: 30px;
+    color: #f7f7f7;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+.banner .inside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-ins .tags p{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px 15px;
+    margin-right: 10px;
+    border-radius: 100px;
+    font-size: 12px;
+    color: #f7f7f7c5;
+}
+
+.left-ins h1{
+    font-size: 36px;
+    margin: 15px 0;
+    text-shadow: 0 0 10px #000;
+}
+
+.left-ins .desc{
+    font-size: 14px;
+    color: #ccc;
+    max-width: 80%;
+    margin-bottom: 20px;
+}
+
+.btns a{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 100px;
+    color: #f7f7f7;
+    font-weight: 600;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.btns a:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.trands {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.trand-card1, .trand-card2, .trand-card3, .trand-card4{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.trands .left{
+    max-width: 70%;
+}
+
+.trands .ganre{
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+.trands h3{
+    font-size: 18px;
+    margin: 0;
+    color: #fff;
+}
+
+.trands .desc{
+    font-size: 13px;
+    color: #ccc;
+    margin: 10px 0;
+}
+
+.trands a{
+    font-size: 12px;
+    color: #00ffcc;
+    text-decoration: underline;
+}
+
+.trands .play-btn{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.trands .play-btn:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.trailers{
+    background-color: rgba(51, 51, 51, 0.6);
+    border-radius: 20px;
+    padding: 20px;
+    color: #f7f7f7;
+    border: 1.5px solid rgba(211, 211, 211, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.trailer-card1, .trailer-card2{
+    height: 160px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gradient-line{
+    width: 100%;
+    padding: 15px 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+}
+
+.gradient-line p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.trailer-play-btn{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 100px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.conti-line1, .conti-line2, .conti-line3{
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.conti-line1:hover, .conti-line2:hover, .conti-line3:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.conti-line1 img, .conti-line2 img, .conti-line3 img{
+    width: 60px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 15px;
+    background-color: #222;
+}
+
+.content{
+    flex-grow: 1;
+}
+
+.content .name{
+    font-size: 16px;
+    margin: 0;
+    color: #fff;
+}
+
+.content .part{
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+.conti-play-btn{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 100px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.conti-play-btn:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
